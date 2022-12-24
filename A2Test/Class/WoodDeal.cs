@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace A2Test.Class
 {
-    internal class WoodDeal
+    internal class WoodDeal 
     {
-        public Data data { get; set; }
+        public Data data { get; set; } //не очень понятно для чего такая сложная вложенность
     }
 
-    public class Deal
+    public class Deal //каждый класс лучше назначать в отдельный .cs файл и сгруппировать по папкам
     {
         [Key]
-        public string dealNumber { get; set; }
+        public string dealNumber { get; set; } // публичные переменные с большой буквы
         public string sellerName { get; set; }
         public string sellerInn { get; set; }
         public string buyerName { get; set; }
@@ -23,7 +23,7 @@ namespace A2Test.Class
         public string dealDate { get; set; }
         public double woodVolumeSeller { get; set; }
         public double woodVolumeBuyer { get; set; }
-        public string __typename { get; set; }
+        public string __typename { get; set; } // нижним подчеркиваением определяют приватные переменные, единичным
     }
 
     public class Data
