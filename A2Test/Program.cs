@@ -21,7 +21,7 @@ namespace A2Test
         {
             while (true) 
             {
-                Site.UpdateData(10000);
+                Site.UpdateData(10000); // тестовый фикс
                 Thread.Sleep(600000); //Между каждым обходом заложить ожидание 10 минут.
             }
             Console.ReadLine();
