@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace A2Test.Class.Database
 {
-    internal class WoodBuy
+    internal class WoodBuy // в рамках задачи нет необходимости разделять на Buy и Sell, нужно сделать 1 объект в котором будут все поля
     {
         [Key]
         public string DealNumber { get; set; }
